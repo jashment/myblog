@@ -1,0 +1,10 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title"><%= comment.name %></h4>
+  </div>
+  <div class="panel-body">
+    <%= comment.body %>
+
+    <p><%= link_to "delete", [comment.post, comment], method: :delete, data: {confirm: "Are you sure?"}%></p>
+  </div>
+</div>
